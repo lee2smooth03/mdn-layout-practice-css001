@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    /*flex-direction: column;*/
+    height: calc(100vh - 44px);
+    margin: 0 5px;
+
+    border: 1px deeppink solid;
+    border-radius: 10px;
+}
+
+.container div {
+    border: 1px deeppink solid;
+    border-radius: 10px;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+/*.container div:nth-child(1) {*/
+.container div:first-child {
+    flex: 8;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+}
+
+/*.container > div:nth-child(2) */
+.container > div {
+    padding: 0;
+}
+
+/*.container div:first-child div:nth-child(1) {
+    flex: 4;
+}
+
+.container div:first-child div:last-child {
+    flex: 1;
+}*/
+
+.container div:nth-child(1) div {
+    margin: 5px;
+}
+
+.container div:nth-child(1) div:nth-child(1) {
+    margin: 5px 5px 0px 5px;
+    display: flex;
+}
+
+.container > div:first-child > div:nth-of-type(2n) {
+    padding: 0px;
+    /*background-color: yellow;*/
+}
+
+.container div:nth-child(1) div:nth-child(1) div {
+    margin: 5px;
+    flex: 1;
+}
+
+
+.container div:nth-child(1) div:nth-child(1) div:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.container div:nth-child(1) div:nth-child(1) div:nth-child(2) {
+    display: flex;
+}
+
+.container div:nth-child(1) div:nth-child(1) div:nth-child(2) > .section {
+    flex: 1;
+
+    margin: 0px;
+    padding: 0px;
+
+    border: 1px forestgreen dashed;    
+}
+
+.container div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(2) {
+    margin: 0 5px;
+}
+
+.container div:nth-child(2) {
+    flex: 1;
+    margin-left: 0px;
+}
+
+/*.container div:nth-child(2) div:nth-child(2) {
+    display: block;
+
+    height: 300px;
+    width: 100px;
+
+    border: 1px deeppink solid;
+}
+
+/*.container div div {
+    display: flex;
+    /*flex-direction: column;
+    margin: 5;
+}
+
+.container div div:nth-child(1) {
+    flex: 4;
+    padding: 5px;
+    margin-bottom: 0;
+
+    /*display: flex;
+    flex-direction: row;
+}
+
+.container div div:nth-child(2) {
+    flex: 1;
+    padding: 5px;
+}
+
+div.container div div div:nth-last-child() {
+    display: flex;
+}
+
+.container .section {
+    flex: 200px 1;
+    margin: 0px;
+    background-color: lime;
+}*/
